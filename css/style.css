@@ -43,39 +43,66 @@ body {
 /* HERO SECTION (VIDEO DE FONDO) */
 .hero-section {
     position: relative;
-    overflow: hidden;
-    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden !important; /* Corta lo que sobra del video */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #bg-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -2;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    z-index: 0; /* Capa 0 */
 }
 
 .overlay {
     position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Capa 1 (sobre el video) */
 }
 
 .hero-content {
-    z-index: 10;
+    position: relative;
+    z-index: 10; /* Capa 10 (sobre todo) */
 }
 
-.shadow-text {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+.wave-container {
+    position: absolute;
+    bottom: -5px; /* Cubre imperfecciones al ras del suelo */
+    left: 0;
+    width: 100%;
+    /* Subimos la altura sustancialmente para que la ola sea PROTAGONISTA */
+    height: 250px; 
+    z-index: 5;
+    line-height: 0;
+    /* EFECTO 3D: Añade una sombra suave sobre el video */
+    filter: drop-shadow(0px -8px 15px rgba(0,0,0,0.15));
+}
+
+.wave-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.wave-container svg path {
+    /* Usamos el color crema de tu fondo (--vainilla-claro) */
+    fill: #fdf6ec !important; 
+}
+
+/* Modificación necesaria para asegurar que el texto no quede debajo */
+.hero-content {
+    position: relative;
+    z-index: 10;
 }
 
 /* BOTONES PERSONALIZADOS */
