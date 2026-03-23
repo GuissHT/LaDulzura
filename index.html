@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Dulzura - Pastelería Artesanal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.png" alt="La Dulzura" height="70" class="logo-shadow">
+                <span class="ms-2 font-pacifico d-none d-sm-inline fs-3">La Dulzura</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-1"><a class="nav-link px-3" href="#inicio">Inicio</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link px-3" href="#nosotros">Quiénes Somos</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link px-3" href="#servicios">Servicios</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link px-3" href="#blog">Blog</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn-contacto-nav px-4 py-2" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section vh-100 d-flex align-items-center justify-content-center text-center">
+
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="img/video-pasteleria.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="container hero-content text-white">
+            <h1 class="display-1 font-pacifico mb-3 animate-fade">La Dulzura</h1>
+            <p class="fs-3 fw-light mb-4 shadow-text">Sabor local hecho con amor desde El Alto</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#servicios" class="btn btn-custom btn-lg shadow">Ver Delicias</a>
+                <a href="https://wa.me/59171965700?text=Hola!%20Quisiera%20reservar%20la%20Torta%20Selva%20Negra"
+                    class="btn btn-outline-light btn-lg rounded-pill px-4 shadow">Hacer Pedido</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="img/logo.png" class="img-fluid p-4 rounded-circle shadow-sm" alt="La Dulzura"
+                        style="max-height: 400px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="font-pacifico color-fresa display-4 mb-4">¿Quiénes Somos?</h2>
+                    <p class="fs-5">
+                        <b> Somos un emprendimiento apasionado por la repostería artesanal en <strong>El Alto</strong>.
+                            En La Dulzura, cada torta cuenta una historia de sabor local y tradición.</b>
+                    </p>
+
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-6">
+                            <div class="p-3 border-0 shadow-sm rounded-4 bg-white h-100 card-mision-vision">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="fs-3 me-2"></span>
+                                    <h4 class="fw-bold mb-0 color-chocolate">Misión</h4>
+                                </div>
+                                <p class="small mb-0 text-muted">
+                                    <b>Endulzar los momentos más importantes de tu vida con repostería de alta calidad,
+                                        calidez humana y el auténtico sabor alteño.</b>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="p-3 border-0 shadow-sm rounded-4 bg-white h-100 card-mision-vision">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="fs-3 me-2"></span>
+                                    <h4 class="fw-bold mb-0 color-chocolate">Visión</h4>
+                                </div>
+                                <p class="small mb-0 text-muted">
+                                    <b>Ser la pastelería líder en El Alto, reconocida por nuestra innovación constante y
+                                        por ser parte de las familias bolivianas.</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="servicios" class="py-5 bg-crema">
+        <div class="container text-center">
+            <h2 class="mb-5 color-chocolate font-pacifico display-4">Lo que Ofrecemos</h2>
+
+            <div class="nav nav-pills row g-4 justify-content-center border-0" id="v-pills-tab" role="tablist">
+
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm h-100 border-0 card-pastel active" id="pill-reposteria-tab"
+                        data-bs-toggle="pill" data-bs-target="#pill-reposteria" role="tab" style="cursor: pointer;">
+                        <div class="icon mb-3">🎂</div>
+                        <h3 class="fw-bold">Repostería Fina</h3>
+                        <p>Mini tortas personalizadas para cumpleaños y para endulzar tu dia a dia.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm h-100 border-0 card-pastel" id="pill-candy-tab" data-bs-toggle="pill"
+                        data-bs-target="#pill-candy" role="tab" style="cursor: pointer;">
+                        <div class="icon mb-3">🧁</div>
+                        <h3 class="fw-bold">Candy Bar</h3>
+                        <p>Variedad de mini postres y bocaditos dulces.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm h-100 border-0 card-pastel" id="pill-te-tab" data-bs-toggle="pill"
+                        data-bs-target="#pill-te" role="tab" style="cursor: pointer;">
+                        <div class="icon mb-3">☕</div>
+                        <h3 class="fw-bold">Servicio de Té</h3>
+                        <p>Masitas tradicionales y modernas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content mt-5" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pill-reposteria" role="tabpanel">
+                    <h4 class="font-pacifico color-fresa mb-4 fs-2">Nuestras Tortas Estrella</h4>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/tortas.png" class="card-img-top p-2 rounded-4" alt="Mini torta 3 leches">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Mini torta 3 leches</h5>
+                                    <p class="text-muted small">Bizcocho humedo de vainilla y crema de leche.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 6</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20la%20Mini%20Torta%203%20Leches"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Reservar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/tortitapg.jpg" class="card-img-top p-2 rounded-4" alt="Torta Vainilla">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Torta de Vainilla</h5>
+                                    <p class="text-muted small">Clásica y suave, rellena de mermelada artesanal y frutas
+                                        frescas.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 6</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20la%20Torta%20de%20Vainilla"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Reservar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/tortitasazul.jpg" class="card-img-top p-2 rounded-4" alt="Red Velvet">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Torta de vainilla con crema azul</h5>
+                                    <p class="text-muted small">Color vibrante y sabor a vainilla</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 40</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20la%20Torta%20de%20Vainilla%20con%20Crema%20Azul"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Reservar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/tortitasazul.jpg" class="card-img-top p-2 rounded-4" alt="Red Velvet">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Torta de vainilla con crema azul</h5>
+                                    <p class="text-muted small">Color vibrante y sabor a vainilla</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 40</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20la%20Torta%20de%20Vainilla%20con%20Crema%20Azul"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Reservar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/tortas.png" class="card-img-top p-2 rounded-4" alt="Red Velvet">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Torta de vainilla con crema azul</h5>
+                                    <p class="text-muted small">Color vibrante y sabor a vainilla</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 40</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20la%20Torta%20de%20Vainilla%20con%20Crema%20Azul"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Reservar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/tortitasazul.jpg" class="card-img-top p-2 rounded-4" alt="Red Velvet">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Torta de vainilla con crema azul</h5>
+                                    <p class="text-muted small">Color vibrante y sabor a vainilla</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 40</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20la%20Torta%20de%20Vainilla%20con%20Crema%20Azul"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Reservar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pill-candy" role="tabpanel">
+                    <h4 class="font-pacifico color-fresa mb-4 fs-2">Delicias para tu Mesa Dulce</h4>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/gelatina2fresa.jpg" class="card-img-top p-2 rounded-4" alt="Cupcakes">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Gelatinas de 2 sabores</h5>
+                                    <p class="text-muted small">gelatinas de 2 sabores fresa y leche cremosa.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 5</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20el%20Pack%20de%20Gelatinas%20de%202%20sabores"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/flan-vainilla.jpg" class="card-img-top p-2 rounded-4"
+                                    alt="Flan de Vainilla">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Flan de Vainilla</h5>
+                                    <p class="text-muted small">Flan de vainilla con caramelo dorado.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 30</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20Flan%20de%20Vainilla"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/Pudin-de-chocolate.jpg" class="card-img-top p-2 rounded-4"
+                                    alt="Pudin de chocolate">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Pudin de chocolate</h5>
+                                    <p class="text-muted small">Trufas de bizcocho bañadas en chocolate de colores.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 40</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20Pudin%20de%20chocolate"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/Gelatina-cuadritos.png" class="card-img-top p-2 rounded-4"
+                                    alt="Gelatina de cuadritos">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Gelatina de cuadritos</h5>
+                                    <p class="text-muted small">Gelatina en forma de cuadros con sabores variados.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 6</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20Gelatina%20de%20cuadritos"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/gelatina2mango.jpg" class="card-img-top p-2 rounded-4"
+                                    alt="Gelatina de cuadritos">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Gelatina de mango</h5>
+                                    <p class="text-muted small">Gelatina en forma de cuadros con sabor a mango.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 6</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20Gelatina%20de%20mango"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm card-producto">
+                                <img src="img/flanes-de-dos.jpg" class="card-img-top p-2 rounded-4"
+                                    alt="Flan de dos sabores">
+                                <div class="card-body">
+                                    <h5 class="fw-bold">Flan de dos sabores</h5>
+                                    <p class="text-muted small">Un flan con dos sabores distintos en cada capa.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold color-chocolate fs-5">Bs. 6</span>
+                                        <a href="https://wa.me/59171965700?text=Deseo%20Flan%20de%20dos%20sabores"
+                                            class="btn btn-fresa btn-sm rounded-pill px-3">Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pill-te" role="tabpanel">
+                <h4 class="font-pacifico color-fresa mb-4 fs-2">Masitas Tradicionales</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <div class="alert alert-warning border-0 shadow-sm rounded-4">
+                            <p class="mb-0">☕ <b>¡Próximamente!</b> Estamos horneando nuevas recetas de masitas para
+                                tus tardes de té.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="blog" class="py-5 bg-cielo-suave">
+        <div class="container">
+            <h2 class="text-center mb-5 color-chocolate font-pacifico display-4">Noticias & Blog</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow overflow-hidden card-blog">
+                        <img src="img/helado.jpg" class="card-img-top" alt="Noticia"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold color-fresa">Nuevos Sabores de tortas heladas</h5>
+                            <p class="card-text text-muted">Descubre la variedad de tortas heladas quese ofrecen en otros emprendimientos bolivianos</p>
+                            <a href="https://www.facebook.com/Frida.scz/videos/nuestros-nuevos-sabores-de-tortas-heladas-%EF%B8%8F/1505190417272336/" class="btn btn-sm btn-outline-secondary rounded-pill">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow overflow-hidden card-blog">
+                        <img src="img/torta-de-vainilla.jpg" class="card-img-top" alt="Blog"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold color-fresa">Tips para una Torta Perfecta</h5>
+                            <p class="card-text text-muted">Te enseñamos cómo mantener la humedad y frescura de tus
+                                pasteles en el clima de El Alto.</p>
+                            <a href="https://www.youtube.com/watch?v=_L2LVjs_ers" class="btn btn-sm btn-outline-secondary rounded-pill">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-custom pt-5 pb-3">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-5 mb-4 text-center text-lg-start">
+                    <h4 class="font-pacifico h1">La Dulzura</h4>
+                    <p class="mt-3 mb-1">Fundador: <strong>Patty Huanca</strong></p>
+                    <p class="mb-1">Ubicación: El Alto, Bolivia</p>
+                    <p class="mb-4"> <b>Una dulzura programada.</b></p>
+
+                    <h4 class="fw-bold mt-4">Contacto</h4>
+                    <p class="mt-3 mb-1">WhatsApp: <a href="https://wa.me/59171965700"
+                            class="text-white text-decoration-none">+591 71965700</a></p>
+                    <p class="mb-1">Email: <a href="mailto:ladulzura@gmail.com"
+                            class="text-white text-decoration-none">ladulzura@gmail.com</a></p>
+                    <p>Horarios: Lun - Sáb: 09:00 - 20:00</p>
+                </div>
+
+                <div class="col-lg-7 mb-4">
+                    <div class="form-contacto-container p-4 p-lg-5 shadow-lg rounded-5 bg-crema-formulario text-dark">
+                        <h2 class="font-pacifico text-center color-fresa mb-4">Contáctame</h2>
+                        <form action="https://formspree.io/f/mwvrdnle" method="POST">
+                            <div class="mb-3">
+                                <input type="text" name="nombre" class="form-control custom-input"
+                                    placeholder="Nombre completo" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="email" name="email" class="form-control custom-input"
+                                    placeholder="Correo electrónico" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea name="mensaje" class="form-control custom-input" rows="4"
+                                    placeholder="Escribe tu mensaje" required></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-naranja-dulce btn-lg w-100 shadow-sm">Enviar
+                                    mensaje</button>
+                            </div>
+                            <input type="hidden" name="_next" value="https://tu-enlace-aqui.com/index.html">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="text-center">
+                            <h2 class="mb-3 h4 fw-bold">Nuestra Ubicación</h2>
+                            <div
+                                class="ratio ratio-21x9 mb-3 shadow-lg rounded-4 overflow-hidden border border-3 border-white">
+                                <iframe src="https://maps.google.com/maps?q=LbuntE3asroCUCJeA&output=embed"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <a href="https://maps.app.goo.gl/ZpXhyPPbVK6CbVvb6" target="_blank"
+                                class="btn btn-warning btn-sm rounded-pill px-4 fw-bold shadow-sm">
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-light opacity-50 mt-4">
+
+                <div class="text-center">
+                    <small>© 2026 La Dulzura - Proyecto Institucional realizado por <b><i>Helian Nasheli Patty
+                                Huanca</i></b></small>
+                </div>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
